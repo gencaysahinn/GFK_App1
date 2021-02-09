@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		359BF3DC25D2ED8E00F453EB /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359BF3DB25D2ED8E00F453EB /* ViewControllerViewModel.swift */; };
 		35FCEC7E25CEBC08001485DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FCEC7D25CEBC08001485DE /* AppDelegate.swift */; };
 		35FCEC8025CEBC08001485DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FCEC7F25CEBC08001485DE /* SceneDelegate.swift */; };
 		35FCEC8225CEBC08001485DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FCEC8125CEBC08001485DE /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		359BF3DB25D2ED8E00F453EB /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		35FCEC7A25CEBC08001485DE /* App1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35FCEC7D25CEBC08001485DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35FCEC7F25CEBC08001485DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		359BF3DA25D2ED7900F453EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				359BF3DB25D2ED8E00F453EB /* ViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		359BF3DF25D2F07900F453EB /* View+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35FCEC8125CEBC08001485DE /* ViewController.swift */,
+				35FCEC8325CEBC08001485DE /* Main.storyboard */,
+				35FCEC8825CEBC08001485DE /* LaunchScreen.storyboard */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
 		35FCEC7125CEBC08001485DE = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +76,11 @@
 		35FCEC7C25CEBC08001485DE /* App1 */ = {
 			isa = PBXGroup;
 			children = (
+				359BF3DF25D2F07900F453EB /* View+Controller */,
+				359BF3DA25D2ED7900F453EB /* ViewModel */,
 				35FCEC7D25CEBC08001485DE /* AppDelegate.swift */,
 				35FCEC7F25CEBC08001485DE /* SceneDelegate.swift */,
-				35FCEC8125CEBC08001485DE /* ViewController.swift */,
-				35FCEC8325CEBC08001485DE /* Main.storyboard */,
 				35FCEC8625CEBC08001485DE /* Assets.xcassets */,
-				35FCEC8825CEBC08001485DE /* LaunchScreen.storyboard */,
 				35FCEC8B25CEBC08001485DE /* Info.plist */,
 			);
 			path = App1;
@@ -140,6 +159,7 @@
 				35FCEC8225CEBC08001485DE /* ViewController.swift in Sources */,
 				35FCEC7E25CEBC08001485DE /* AppDelegate.swift in Sources */,
 				35FCEC8025CEBC08001485DE /* SceneDelegate.swift in Sources */,
+				359BF3DC25D2ED8E00F453EB /* ViewControllerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = App1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = App1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
